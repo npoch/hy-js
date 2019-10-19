@@ -17,9 +17,15 @@
 
 		// Exercise 1.
 		// 1. Create a variable called zooAnimal and have it hold a string that says hippopotamus. Consider that this variable is always going to be hippopotamus.
+		const zooAnimal = 'hippopotamus';
 		// 2. create a variable called numberOfAnimals that will hold a number of 7.
+		const numberOfAnimals = 7;
 		// 3. Now use string concatenation and both of the variables to log the sentence "The zoo has 7 hippopotamus." to the console.
+		const phrase = 'The zoo has ' + numberOfAnimals + ' ' + zooAnimal + '.';
+		console.log(phrase);
 		// 4. String concatenation can be pretty cumbersome sometimes. Rewrite the console.log but this time using template literals.
+		const phrase2 = `The zoo has ${numberOfAnimals} ${zooAnimal}.`
+		console.log(phrase2);
 
 		
 
@@ -34,7 +40,16 @@
 		// 6. Now log a string using template literals that says "MegaMan has been hit! Their health has gone from 100 to 20."
 		// 7. And lastly, wrap the last console.log in an if statement that specifies that this string will only log when hit is equal to true. Test to see if it works by changing the value of hit to false and back to true again. The string should only log when the value is true.
 
+		const playerOne = 'MegaMan';
+		let health = 100;
+		const damage = 20;
+		let hit = false;
+		console.log(playerOne + '\'s health is at ' + health + '!');
+		console.log(`${playerOne} has been hit! Their health has gone from ${health} to ${health - damage}`);
 
+		if(hit) {
+			console.log(`${playerOne} has been hit!!`);
+		}
 
 
 
