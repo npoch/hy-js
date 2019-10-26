@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // const desireToAdopt= true;
+    // function adoptACat() {
+    //     if(desireToAdopt === true) {
+    //         return 'Crazy cat owner';
+    //     } else {
+    //         return 'Sorry not today'; 
+    //     }
+    // }
+    
+    // Functions within functions scope
+    function grandparent() {
+        const name = "Mabel";
+        // likes is not accessible here
+        // child function is not accessible here
+        function parent() {
+        // name is accessible here
+        // child function is accessible here
+        // likes is not accessible here
+        console.log(likes);
+            function child() {
+        // name is also accessible here
+            const likes = "bread pudding";
+            }
+        }
+    }
+
+
+    </script>
+</body>
+</html>
