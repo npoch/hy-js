@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+  {
+    name: 'Pat',
+    grade: 58
+  },
+  {
+    name: 'Taylor',
+    grade: 93
+  },
+  {
+    name: 'Dale',
+    grade: 80
+  },
+  {
+    name: 'Casey',
+    grade: 78
+  },
+  {
+    name: 'Jo',
+    grade: 68
+  }
+];
+    const filteredAndMappedResults = students.filter((student) => {
+    // Do some filtering.
+    return student.grade >= 80;
+  }).map((honourRoll) => {
+    // Do some mapping of the new filtered array.
+    return honourRoll.grade;
+  });
+    console.log(filteredAndMappedResults);
+    </script>
+</body>
+</html>

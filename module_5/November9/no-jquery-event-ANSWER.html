@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example 1</title>
+</head>
+<body>
+  <p>Don't forget to open your console to see the output!</p>
+
+  <h1>Name that rescue!</h1>
+  <button>Rescue: Spot</button>
+
+  <style>
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      padding: 5px;
+    }
+
+    button {
+      border: none;
+      background-color: tomato;
+      color: white;
+      font-weight: bold;
+      padding: 5px 8px;
+      font-size: 20px;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+  </style>
+
+  <script>
+
+    const dogNames = ["Fluffy", "Spot", "Kipper", "Sam", "Buddy"];
+
+    //Replace ________ with a variable name
+    const generateButton = document.querySelector('button');
+
+
+    const getRandomName = () => {
+      //Add the variable name and fix the error so that the button is properly updated
+      let rescueName = dogNames[Math.floor(Math.random() * dogNames.length)];
+      generateButton.textContent = 'Rescue: ' + rescueName;
+    }
+
+    generateButton.addEventListener('click', getRandomName);
+
+    //BONUS: Change the button text in the HTML to "Generate" and add a new HTML element to populate with the randomly generated name
+
+  </script>
+</body>
+</html>

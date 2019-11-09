@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tutorial: manipulating the DOM with jQuery</title>
+
+  <style>
+    .highlight {
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tutorial: manipulating the DOM with jQuery</h1>
+
+  <p class="firstp">Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, velit, rerum, aspernatur reiciendis cumque incidunt itaque at autem ullam earum rem asperiores. Sequi distinctio temporibus est provident veniam. Ab, iste.</p>
+
+  <p class="secondp">Paragraph 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, repudiandae, dolorum neque veritatis eos reprehenderit consequuntur velit dolores necessitatibus error nulla rerum nam vel quos quidem expedita molestias perspiciatis perferendis.</p>
+
+  <img src="http://lorempixel.com/200/200">
+  <img src="http://lorempixel.com/200/200">
+  <img src="http://lorempixel.com/200/200">
+  <img src="http://lorempixel.com/200/200">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('.firstp').addClass('highlight')
+      .text('This is the first paragraph');
+  });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conditional example</title>
+</head>
+<body>
+  <label for="weather">What does it look like outside the window? </label>
+  <select id="weather">
+    <option value="">--Make a choice--</option>
+    <option value="sunny">Sunny</option>
+    <option value="rainy">Rainy</option>
+    <option value="snowing">Snowing</option>
+    <option value="overcast">Overcast</option>
+  </select>
+
+  <p></p>
+
+  <script>
+
+  //Some of the variable names have been removed - add them to the correct locations
+    const weatherDropdown = document.querySelector('select');
+    const _____________ = document.querySelector('p');
+
+    const _____________ = function () {
+      const weather = this.value;
+      let _____________ = '';
+
+      if (_____________ === 'sunny') {
+        message = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+      } else if (_____________ === 'rainy') {
+        message = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+      } else if (_____________ === 'snowing') {
+        message = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+      } else if (_____________ === 'overcast') {
+        message = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+      }
+
+      messageHolder.textContent = message;
+
+    }
+
+    weatherDropdown.addEventListener('change', setWeather);
+
+
+    //** BONUS** Update the weather reports to include an image based on the weather choice (hint: look up image.src)
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>No jQuery Exercise</title>
+  <style>
+    a {
+      position: relative;
+    }
+
+    .thumbnailImg {
+      opacity: 0;
+      transition: all 0.3s;
+      position: absolute;
+      width: 50px;
+      bottom: 0;
+      left: 0;
+    }
+
+    .thumbnailImg:hover {
+      transform: scale(2);
+      opacity: 1;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Illustrated story</h1>
+
+  <!-- Lorem ipsum from http://www.bobrosslipsum.com/ -->
+
+  <p>It's cold, but it's beautiful. Making all those little fluffies that live in the <a href="https://source.unsplash.com/500x500/?clouds">clouds</a>. I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people. Let's get crazy. We might as well make some Almighty <a href="https://source.unsplash.com/500x500/?mountains">mountains</a> today as well, what the heck. Just go back and put one little more happy tree in there.</p>
+
+  <p>It looks so good, I might as well not stop. We can always carry this a step further. There's really no end to this. See. We take the corner of the <a href="https://source.unsplash.com/500x500/?brush">brush</a> and let it play back-and-forth. You can create the world you want to see and be a part of. You have that power. Only think about one thing at a time. Don't get greedy. Just <a href="https://source.unsplash.com/500x500/?relax">relax</a> and let it flow. That easy.</p>
+
+  <p>This is probably the greatest thing to happen in my life - to be able to share this with you. This is unplanned it really just happens. All you have to do is let your <a href="https://source.unsplash.com/500x500/?imagination">imagination</a> go wild.</p>
+
+  <p>We can fix anything. All kinds of happy little splashes. Think about a cloud. Just <a href="https://source.unsplash.com/500x500/?float">float</a> around and be there. Everyone is going to see things differently - and that's the way it should be.</p>
+
+  <p>When you buy that first tube of <a href="https://source.unsplash.com/500x500/?paint">paint</a> it gives you an artist license. Clouds are free they come and go as they please. Anything you want to do you can do here.</p>
+
+  <p>These <a href="https://source.unsplash.com/500x500/?trees">trees</a> are so much fun. I get started on them and I have a hard time stopping.<p>
+
+  <p>Maybe he has a little friend that lives right over here. I think there's an artist hidden in the bottom of every single one of us. It's amazing what you can do with a little love in your <a href="https://source.unsplash.com/500x500/?heart">heart</a>.</p>
+</body>
+</html>
+
+<script>
+
+  // - Create a list of every link on the page using document.getElementsByTagName(tagName)
+
+
+  // - Iterate through the list using a for loop (you can use length to check how many times to loop over the list). In each iteration of the loop:
+
+
+  //   • Find the current href using element.getAttribute(name), and store into a variable
+  //   • Create an IMG element using document.createElement(tagName)
+  //   • Set the "src" of the IMG element using element.setAttribute(name, value)
+  //   • Set the "class" of the IMG element using element.classList.add(class)
+  //   • Append the IMG to the link using element.appendChild(element)
+
+
+  //BONUS
+  // Remove the urls from the links and create a function that takes the text inside the link (eg. mountain, cloud) and dynamically generates the link based on the text content of the element. Then populate each link with the correct url.
+
+</script>
