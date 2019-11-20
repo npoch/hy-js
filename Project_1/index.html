@@ -7,34 +7,30 @@
     <title>Date night ideas</title>
     <link rel="stylesheet" type="text/css" href="./reset.css">
     <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="./style.css">
 
 </head>
 <body>
-    <div class="page-aligner">
-        <header>
-        <h1>Random date night ideas</h1>
-        </header>
-        <section >
-        <div class="idea-window">
-            <h1 class="idea"></h1>
-            <div class="btn">generate new idea</div>
-
-        </div>
-        <div>
-                <form action="">
-                    <input type="text">
-                    <label for=""></label>
-                    <input type="submit">
+        <body>
+                <div class="container">
+                    <h1>Date Idea Generator</h1>
+                <form data-idea-form>
+                    <label for="item">Add a date idea:</label>
+                    <input class="" type="text" id="item" placeholder="Movie...">
+                    <input type="submit" value="Add Item">
                 </form>
-            </div>
-        </section>
-        <footer>
-
-        </footer>
+                <form>
+                    <input class="generate-result" type="text" id="item" placeholder="Your date will be:">
+                <input type="submit" data-generate id="generate" value="Pick a Date">
+                </form>
+                <!-- <button data-generate>Pick and Date</button> -->
+                    <ul data-idea-list class="flex-container">
+                        <!-- To do items get added dynamically here -->
+                    </ul>
+                </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/Users/nathanpoch/hy-js/hy-js/Project_1/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </body>
 </html>
