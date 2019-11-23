@@ -51,7 +51,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <script>
-
+    const app = {};
+    app.$number = 0;
+    
     // When the page is loaded, listen for a click on the bell
 
       // when that happens do the following:
@@ -60,16 +62,37 @@
         // 3. Bonus! Look into HTML5 audio element and see how you can play cowbell.wav everytime you click the bell
         // Have fun - add your own things to it!
 
-
-
-    const addAnimation = function($element, animationName) {
+    app.addAnimation = function($element, animationName) {
       // this function take two params: the element and the class to add to that element.
       // it uses jquery to add the class and then listens for the animation to END before taking the class off again
       // We can use it like this: addAnimation( $('.bell'), 'swing' )
       $element.addClass(animationName + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        element.removeClass(animationName);
+      $element.removeClass(animationName);
       });
     }
+    app.playSound = function(){
+      const sound = $('audio')[0];
+      sound.play();
+    }
+    app.updateCount = function(){
+      app.$number ++;
+      $('.count').html(app.$number);
+
+    }
+    app.init = function(){
+      $('.bell').on('click', function(){
+        console.log('bell clicked');
+        const $currentBell = $(this);
+        app.addAnimation($currentBell, 'wobble');
+        app.playSound();
+        app.updateCount();
+      })
+    }
+
+    $(function() {
+      app.init();
+
+    });
 
   </script>
 </body>
